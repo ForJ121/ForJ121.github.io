@@ -5,7 +5,7 @@ lang: zh-CN
 timezone: Asia/Shanghai
 
 title: ForJ
-tagline: 代码、思考与生活
+tagline: 从春季夏日秋风陪我过到冬天
 description: >-
   ForJ 的个人博客，记录技术实践、思考与生活。
 
@@ -52,7 +52,7 @@ pageviews:
   provider:
 
 # 留空时跟随系统，并允许访客切换深浅色。
-theme_mode:
+theme_mode: light
 
 cdn:
 avatar: https://github.com/ForJ121.png

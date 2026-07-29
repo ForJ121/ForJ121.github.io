@@ -1,0 +1,111 @@
+---
+---
+
+@use 'abstracts/variables' with (
+  $theme: '{{ site.theme_mode }}'
+);
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+/* ForJ custom light-blue palette */
+:root,
+:root[data-bs-theme='light'] {
+  --main-bg: #f7fbfe;
+  --mask-bg: #adc7d8;
+  --main-border-color: #dceaf3;
+
+  --text-color: #334b5d;
+  --text-muted-color: #71889a;
+  --text-muted-highlight-color: #49697f;
+  --heading-color: #203f55;
+  --label-color: #557185;
+  --blockquote-border-color: #b9d9eb;
+  --blockquote-text-color: #607c90;
+  --link-color: #2878aa;
+  --link-underline-color: #bcd9ea;
+
+  --button-bg: #fafdff;
+  --btn-border-color: #d4e6f1;
+  --btn-backtotop-color: #4d738c;
+  --btn-backtotop-border-color: #d7e8f2;
+  --checkbox-color: #aac5d6;
+  --checkbox-checked-color: #3b91c3;
+  --img-bg: radial-gradient(circle, #ffffff 0%, #e8f3f9 100%);
+
+  --menu-bg: #fafdff;
+  --menu-border-color: #d9e9f3;
+  --menu-shadow-color: rgb(48 99 130 / 14%);
+  --menu-active-color: #315c77;
+  --menu-highlight-bg: rgb(221 239 249 / 70%);
+
+  --site-title-color: #284f68;
+  --site-subtitle-color: #668398;
+  --sidebar-bg: #eaf5fb;
+  --sidebar-border-color: #d2e6f1;
+  --sidebar-muted-color: #55758b;
+  --sidebar-active-color: #1f5f87;
+  --sidebar-hover-bg: rgb(196 224 240 / 72%);
+  --sidebar-btn-bg: #f7fbfe;
+  --sidebar-btn-color: #66879c;
+  --avatar-border-color: #ffffff;
+
+  --topbar-bg: rgb(247 251 254 / 82%);
+  --topbar-text-color: #46677d;
+  --search-border-color: #d8e8f2;
+  --search-icon-color: #88a8bc;
+  --input-focus-border-color: #77acd0;
+
+  --post-list-text-color: #607a8c;
+  --btn-patinator-text-color: #4f7086;
+  --btn-paginator-hover-color: #e3f1f8;
+
+  --toc-highlight: #2679aa;
+  --toc-popup-border-color: #c8deeb;
+  --btn-share-color: #6e8b9e;
+  --btn-share-hover-color: #287faf;
+  --card-bg: #fcfeff;
+  --card-hover-bg: #edf7fc;
+  --card-shadow: rgb(65 116 147 / 7%) 0 4px 12px 0,
+    rgb(123 168 194 / 16%) 0 0 0 1px;
+  --footnote-target-bg: #e0f3fc;
+  --tb-odd-bg: #f0f8fc;
+  --tb-border-color: #d8e8f2;
+  --dash-color: #adc8d9;
+
+  --tag-border: #c9dfec;
+  --tag-shadow: #d7e8f2;
+  --tag-hover: #dceef8;
+  --search-tag-bg: #eef7fc;
+
+  --categories-border: rgb(78 128 158 / 18%);
+  --categories-hover-bg: #e2f1f8;
+  --categories-icon-hover-color: #2e6e94;
+
+  --timeline-color: rgb(77 126 157 / 15%);
+  --timeline-node-bg: #91b9d0;
+  --timeline-year-dot-color: #fafdff;
+
+  --language-border-color: #d8e8f2;
+  --highlight-bg-color: #edf6fb;
+  --highlighter-rouge-color: #3c637c;
+  --highlight-lineno-color: #8aa8ba;
+  --inline-code-bg: rgb(72 134 171 / 9%);
+  --code-color: #31566f;
+  --code-header-text-color: #7190a3;
+  --code-header-muted-color: #d4e6f0;
+  --code-header-icon-color: #a7c1d1;
+}
+
+#sidebar {
+  border-right: 1px solid var(--sidebar-border-color);
+}
+
+.card,
+#post-list .card {
+  border-color: var(--main-border-color);
+}
