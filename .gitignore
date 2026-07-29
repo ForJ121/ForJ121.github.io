@@ -1,5 +1,30 @@
-_site/
-.jekyll-cache/
-.sass-cache/
-.bundle/
-vendor/
+# Bundler
+.bundle
+vendor
+Gemfile.lock
+
+# Jekyll
+.jekyll-cache
+.jekyll-metadata
+_site
+
+# Ruby / Node
+*.gem
+node_modules
+package-lock.json
+
+# IDE
+.idea
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+
+# Chirpy build assets
+_sass/vendors
+assets/js/dist
+
+# System files
+*~
+.DS_Store
+Thumbs.db
