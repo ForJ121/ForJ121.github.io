@@ -3,7 +3,7 @@ title: "曾经的噩梦——2024年九省联考数学第19题"
 date: 2026-07-29 
 categories: [Diary,随笔]
 tags: [Crypto]
-
+math: true
 ---
 
 ## 1、前言
