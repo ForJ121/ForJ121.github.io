@@ -41,6 +41,8 @@ $$
 ### 2.2 同余的性质
 
 **Ⅰ自反性：**
+
+
 $$
 \boxed{a\equiv a\pmod m}
 $$
@@ -291,6 +293,8 @@ $$
 ③
 
 若：
+
+
 $$
 a^{n,\otimes}=b
 $$
@@ -307,16 +311,17 @@ $$
 
 求：
 $$
-x=2^{10,\otimes} ,p=11
+\\x=2^{10,\otimes} ,p=11
 $$
 可以根据概念直接求，手算并不复杂：
 $$
+\\
 2^{10}=1024\\
 1024÷11=93……1
 $$
 故得到结果：
 $$
-x=2^{10,\otimes}\equiv1024\equiv1\mod11\\
+\\x=2^{10,\otimes}\equiv1024\equiv1\mod11\\
 \boxed {x=1}
 $$
 **<u>（当时写这个题目没看出来有什么意味，复盘的时候才发现原来是“费马小定理”，在第二问中有用）</u>**
@@ -325,7 +330,7 @@ $$
 
 ①先看新的定义：
 $$
-m_1\oplus m_2\equiv(m_1+m_2)^{(p-1),\otimes}\equiv(m_1+m_2)\mod (p-1)
+\\m_1\oplus m_2\equiv(m_1+m_2)^{(p-1),\otimes}\equiv(m_1+m_2)\mod (p-1)\\
 $$
 即该符号表示两个数相加的和除以(p-1)的余数。
 
@@ -333,15 +338,17 @@ $$
 
 此时我们可以进行代换操作，不妨设
 $$
+\\
 \log(p)_a(b\otimes c)=x_1\\
 \log(p)_a b=x_2\\
-\log(p)_a c=x_3
+\log(p)_a c=x_3\\
 $$
 根据定义可知他们满足以下条件：
 $$
+\\
 a^{x_1}\equiv bc\mod p\\
 a^{x_2}\equiv b\mod p\\
-a^{x_3}\equiv c\mod p
+a^{x_3}\equiv c\mod p\\
 $$
 根据我们上面提到的同余的乘法的性质：
 $$
@@ -375,6 +382,7 @@ a^{p}\equiv a^{p-1}a \equiv 1·a \equiv a\mod p
 $$
 则满足：
 $$
+\\
 a^{p,\otimes}=a^{1,\otimes}\\
 a^{p+1,\otimes}=a^{2,\otimes}\\
 a^{p+2,\otimes}=a^{3,\otimes}\\
@@ -411,20 +419,22 @@ x_1=x_2\oplus x_3
 $$
 把这三个数全部带回初始假设，我们就得到了题目要求证明的内容。**<u>（这个对于第三问也有很大作用）</u>**
 $$
-\boxed{\log(p)_a(b\otimes c)=\log(p)_a b \oplus \log(p)_a c}
+\\\boxed{\log(p)_a(b\otimes c)=\log(p)_a b \oplus \log(p)_a c}
 $$
 
 ### 3.4第三问
 
 ①如果我们想证明![image-20260729164920735](../assets/img/posts/2026-07-29-nightmare/image-20260729164920735.png)
 
-我们可以从离散对数问题出发：我们可以看到等式左边
+我们可以从离散对数问题出发：
+
+我们可以看到等式左边
 $$
 x \in X
 $$
 而等式右边是取模之后的结果，也满足
 $$
-y_2\otimes y_1^{n(p-2),\otimes} \in X
+y_2\otimes y_1^{n(p-2),\otimes} \in X\\
 $$
 而我们知道：
 $$
@@ -438,6 +448,7 @@ $$
 
 ②**<u>可以根据我们第二问证明的结论</u>**，带入题目的条件：
 $$
+\\
 \log(p)_a(y_2\otimes y_1^{n(p-2),\otimes})\\
 =\log(p)_ay_2\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 =\log(p)_a(x\otimes b^{k,\otimes})\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
@@ -451,11 +462,13 @@ x_1=\log(p)_ab^{k,\otimes} ,x_2=\log(p)_ay_1^{n(p-2),\otimes}
 $$
 根据题目可知：
 $$
+\\
 y_1\equiv a^k \mod p\\
 b\equiv a^n \mod p
 $$
 根据定义和假设可知：
 $$
+\\
 a^{x_1}\equiv b^k \equiv a^{n·k}\mod p\\
 a^{x_2}\equiv y_1^{n(p-2)}\equiv a^{k·n(p-2)} \mod p
 $$
@@ -469,10 +482,11 @@ a^{x_1+x_2,\otimes}=a^{nk(p-1),\otimes}
 $$
 根据第二问得到的结论：这个函数是周期为(q-1)的函数，所以：
 $$
+\\
 x_1+x_2=nk(p-1)+k_0(p-1)=k'(p-1)\\ =>
 (x_1+x_2) | (p-1)\\=>
 (x_1+x_2) \equiv 0 \mod (p-1)\\=>
-x_1\oplus x_2 =0
+x_1\oplus x_2 =0\\
 $$
 ③把这个式子带入回去：
 $$
