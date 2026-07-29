@@ -10,4 +10,6 @@ order: 5
 
 ## 朋友们
 
-暂无，期待第一位朋友。
+- [ethereal-666.github.io](https://ethereal-666.github.io)
+- [yaaay77.github.io](https://yaaay77.github.io/)
+- [lain0x.cn](http://lain0x.cn/)
