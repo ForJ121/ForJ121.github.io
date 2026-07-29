@@ -33,6 +33,18 @@ toc: true
 
 日期不能晚于当前时间。正文使用 Markdown 编写，提交后会自动出现在首页、分类、标签和归档中。
 
+## 直接在 GitHub 网页发布
+
+1. 打开仓库 <https://github.com/ForJ121/ForJ121.github.io>。
+2. 进入 `_posts` 文件夹。
+3. 点击 **Add file → Create new file**。
+4. 在文件名位置填写 `年-月-日-英文名称.md`，例如 `2026-08-01-my-first-post.md`。
+5. 复制 `_drafts/post-template.md` 的内容，修改标题、日期、分类、标签、简介和正文。
+6. 点击右上角的 **Commit changes**。
+7. 等待 GitHub Actions 完成，文章就会出现在博客首页。
+
+如果文章需要图片，先进入 `assets/img/posts`，使用 **Add file → Upload files** 上传图片，再在 Markdown 中引用它。
+
 ## 插入图片
 
 图片放入 `assets/img/posts`，在文章中引用：
@@ -41,7 +53,7 @@ toc: true
 ![图片说明](/assets/img/posts/example.jpg)
 ```
 
-## 提交文章
+## 在电脑上提交文章
 
 ```powershell
 git add .

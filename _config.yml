@@ -55,7 +55,7 @@ pageviews:
 theme_mode:
 
 cdn:
-avatar: /assets/img/avatar.svg
+avatar: https://github.com/ForJ121.png
 social_preview_image:
 
 toc: true
