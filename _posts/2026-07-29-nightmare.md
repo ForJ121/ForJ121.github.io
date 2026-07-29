@@ -311,7 +311,7 @@ $$
 
 求：
 $$
-\\x=2^{10,\otimes} ,p=11
+x=2^{10,\otimes} ,p=11\\
 $$
 可以根据概念直接求，手算并不复杂：
 $$
@@ -322,7 +322,7 @@ $$
 故得到结果：
 $$
 \\x=2^{10,\otimes}\equiv1024\equiv1\mod11\\
-\boxed {x=1}
+\boxed {x=1}\\
 $$
 **<u>（当时写这个题目没看出来有什么意味，复盘的时候才发现原来是“费马小定理”，在第二问中有用）</u>**
 
@@ -352,7 +352,7 @@ a^{x_3}\equiv c\mod p\\
 $$
 根据我们上面提到的同余的乘法的性质：
 $$
-a^{x_2}a^{x_3}\equiv a^{x_2+x_3}\equiv bc \mod p
+a^{x_2}a^{x_3}\equiv a^{x_2+x_3}\equiv bc \mod p\\
 $$
 再根据传递的性质，我们可知：
 $$
@@ -374,7 +374,7 @@ a^{p-1,\otimes}
 $$
 的时候，它一定会和以上p-1个数中的一个相等，<u>**（根据第一问，我们可以猜出来，这个数是1）即费马小定理**</u>：
 $$
-a^{p-1,\otimes}\equiv a^{0,\otimes} \equiv1 \mod p
+\\a^{p-1,\otimes}\equiv a^{0,\otimes} \equiv1 \mod p
 $$
 那么剩下的数据会满足：
 $$
@@ -386,7 +386,7 @@ $$
 a^{p,\otimes}=a^{1,\otimes}\\
 a^{p+1,\otimes}=a^{2,\otimes}\\
 a^{p+2,\otimes}=a^{3,\otimes}\\
-……
+……\\
 $$
 由此我们可以知道，这个函数
 $$
@@ -398,24 +398,24 @@ $$
 
 ④刚才已经得到这个公式：
 $$
-a^{x_1,\otimes}=a^{x_2+x_3,\otimes}\\
-f(x_1)=f(x_2+x_3)
+//a^{x_1,\otimes}=a^{x_2+x_3,\otimes}\\
+f(x_1)=f(x_2+x_3)//
 $$
 又已知了这个函数是有周期的，所以满足：
 $$
-x_1=(x_2+x_3)+k·(p-1)
+x_1=(x_2+x_3)+k·(p-1)\\
 $$
 那么
 $$
-[x_1-(x_2+x_3)]\mid (p-1)
+[x_1-(x_2+x_3)]\mid (p-1)\\
 $$
 由余数的性质可知：
 $$
-x_1\equiv(x_2+x_3) \mod (p-1)
+x_1\equiv(x_2+x_3) \mod (p-1)\\
 $$
 根据该题最开始的定义，我们可以知道：
 $$
-x_1=x_2\oplus x_3
+x_1=x_2\oplus x_3\\
 $$
 把这三个数全部带回初始假设，我们就得到了题目要求证明的内容。**<u>（这个对于第三问也有很大作用）</u>**
 $$
@@ -452,7 +452,7 @@ $$
 \log(p)_a(y_2\otimes y_1^{n(p-2),\otimes})\\
 =\log(p)_ay_2\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 =\log(p)_a(x\otimes b^{k,\otimes})\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
-=\log(p)_ax\oplus \log(p)_ab^{k,\otimes}\oplus \log(p)_ay_1^{n(p-2),\otimes}
+=\log(p)_ax\oplus \log(p)_ab^{k,\otimes}\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 $$
 由于一般的加法有结合律，他们取余之后结果依然相同，所以同余的加法也有结合律，所以我们可以先计算后面两个数的结果
 
@@ -464,21 +464,21 @@ $$
 $$
 \\
 y_1\equiv a^k \mod p\\
-b\equiv a^n \mod p
+b\equiv a^n \mod p\\
 $$
 根据定义和假设可知：
 $$
 \\
 a^{x_1}\equiv b^k \equiv a^{n·k}\mod p\\
-a^{x_2}\equiv y_1^{n(p-2)}\equiv a^{k·n(p-2)} \mod p
+a^{x_2}\equiv y_1^{n(p-2)}\equiv a^{k·n(p-2)} \mod p\\
 $$
 所以
 $$
-a^{x_1+x_2}\equiv a^{x_1}a^{x_2} \equiv a^{nk+nk(p-2)} \equiv a^{nk(p-1)} \mod p
+a^{x_1+x_2}\equiv a^{x_1}a^{x_2} \equiv a^{nk+nk(p-2)} \equiv a^{nk(p-1)} \mod p\\
 $$
 即
 $$
-a^{x_1+x_2,\otimes}=a^{nk(p-1),\otimes}
+a^{x_1+x_2,\otimes}=a^{nk(p-1),\otimes}\\
 $$
 根据第二问得到的结论：这个函数是周期为(q-1)的函数，所以：
 $$
@@ -490,17 +490,17 @@ x_1\oplus x_2 =0\\
 $$
 ③把这个式子带入回去：
 $$
-\log(p)_a(y_2\otimes y_1^{n(p-2),\otimes})\\
+\\\log(p)_a(y_2\otimes y_1^{n(p-2),\otimes})\\
 =\log(p)_ay_2\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 =\log(p)_a(x\otimes b^{k,\otimes})\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 =\log(p)_ax\oplus \log(p)_ab^{k,\otimes}\oplus \log(p)_ay_1^{n(p-2),\otimes}\\
 =\log(p)_ax\oplus (x_1\oplus x_2)\\
 =\log(p)_ax\oplus 0\\
-=\log(p)_ax
+=\log(p)_ax\\
 $$
 两边同时对a取指再取模，就可以得到
 $$
-x=y_2\otimes y_1^{n(p-2),\otimes}
+\boxed{x=y_2\otimes y_1^{n(p-2),\otimes}}
 $$
 
 ## 4、总结
